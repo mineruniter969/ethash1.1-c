@@ -20,8 +20,8 @@ TEST_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 rm -rf $TEST_DIR/build 
 mkdir -p $TEST_DIR/build 
-cd $TEST_DIR/build ; 
-cmake ../../.. > /dev/null 
+cd $TEST_DIR/build; 
+cmake ../../..
 make Test 
 ./test/c/Test
 
