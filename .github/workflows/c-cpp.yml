@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: apt install -y libboost-system-dev libboost-filesystem-dev libboost-test-dev
     - name: Test
       run: make test
